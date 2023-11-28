@@ -7,10 +7,33 @@ body {
     color: #afa7a7;
 }
 
+/*...........................................Navbar*/
+#offcanvasDarkNavbar {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
+#offcanvasDarkNavbar,
+.btn-close-white,
+.nav-item a {
+    color: inherit;
+}
 
+.nav-item a:hover {
+    color: #600e0e;
+}
 
-/*Footer*/
+/*..........................................Modal*/
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #afa7a7;
+}
+
+/*.........................................Content*/
+h1 {
+    color: black;
+}
+
+/*..........................................Footer*/
 .copyright {
     display: inline;
     padding-left: 5%;
