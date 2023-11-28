@@ -6,3 +6,38 @@ body {
     font-family: 'Pixelify Sans', cursive;
     color: #afa7a7;
 }
+
+
+
+
+/*Footer*/
+.copyright {
+    display: inline;
+    padding-left: 5%;
+    color: black;
+    font-family: sans-serif;
+}
+
+.fa-solid {
+    font-size: x-large;
+}
+
+.socials {
+    display: inline;
+    float: right;
+    padding-right: 5%;
+    letter-spacing: 10px;
+    font-size: x-large;
+}
+
+.socials a {
+    color: black;
+}
+
+.linked:hover {
+    color: #0072b1;
+}
+
+.git:hover {
+    color: #6e5494;
+}
