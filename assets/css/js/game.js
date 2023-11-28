@@ -8,6 +8,10 @@ const optionButtonsElement = document.getElementById('option-buttons')
 let inventory = {}
 let endCollection = {}
 
+/* Sets audio button in navbar to off by default */
+document.getElementById("off").style.display = "block";
+document.getElementById("on").style.display = "none";
+
 
 /* Start's the game */
 function startGame() {
@@ -79,6 +83,24 @@ function selectOption(option) {
     state = Object.assign(inventory, option.setInventory)
     showTextNode(nextTextNodeId)
 }
+
+/* Audio function - Code taken and edited from "Math with crab" project on github*/
+let audioOn = false;
+let myAudio = document.querySelector('#game-music');
+myAudio.loop = true;
+document.getElementById("audio-btn").addEventListener("click", function () {
+    if (audioOn) {
+        myAudio.pause();
+        audioOn = false;
+        document.getElementById("off").style.display = "block";
+        document.getElementById("on").style.display = "none";
+    } else {
+        myAudio.play();
+        audioOn = true;
+        document.getElementById("off").style.display = "none";
+        document.getElementById("on").style.display = "block";
+    }
+});
 
 startGame()
 
