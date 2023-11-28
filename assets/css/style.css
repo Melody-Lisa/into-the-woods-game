@@ -1,0 +1,8 @@
+body {
+    background-image: url(../css/images/parchmentbackground.jpg);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Pixelify Sans', cursive;
+    color: #afa7a7;
+}
